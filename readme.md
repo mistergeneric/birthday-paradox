@@ -1,6 +1,6 @@
-#Readme
+# Readme
 
-##Basic Attempted Logic:
+## Basic Attempted Logic:
 
 Counter set a zero
 
