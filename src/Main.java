@@ -8,8 +8,10 @@ public class Main {
     public static void main(String[] args) {
         double numberOfTimesToRunExperiment = Utils.getTimesToRunExperiment();
 
-        double probability = Utils.runExperiment(numberOfTimesToRunExperiment);
+        for(int numberOfPeople = 5; numberOfPeople <= 100; numberOfPeople += 5) {
+            double probability = Utils.runExperiment(numberOfTimesToRunExperiment, numberOfPeople);
+            System.out.println("Chance of matching birthdays with " + numberOfPeople + " people :" + probability + "%");
 
-        System.out.println("Chance of matching birthdays " + probability + "%");
+        }
     }
 }

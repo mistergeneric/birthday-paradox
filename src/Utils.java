@@ -45,12 +45,10 @@ public class Utils {
         return 0;
     }
 
-    public static double runExperiment(double numberOfTimesToRunExperiment) {
+    public static double runExperiment(double numberOfTimesToRunExperiment, int numberOfPeople) {
         double matches = 0;
         double count = 0;
-        while (count < numberOfTimesToRunExperiment) {
-            int numberOfPeople = 24;
-            List<Integer> birthdays = createBirthdays(numberOfPeople);
+        while (count < numberOfTimesToRunExperiment) { List<Integer> birthdays = createBirthdays(numberOfPeople);
             matches += findMatches(birthdays);
             count++;
         }
